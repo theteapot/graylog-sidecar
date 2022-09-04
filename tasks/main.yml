@@ -1,7 +1,7 @@
 # Standards: 1.2
 ---
 - name: Install required package
-  action: "{{ ansible_pkg_mgr }} name={{ graylog_sidecar_package }} state=present"
+  action: "{{ ansible_pkg_mgr }} name={{ graylog_sidecar_package }} state=present disable_gpg_check=yes"
   tags:
     - graylog-sidecar
 
